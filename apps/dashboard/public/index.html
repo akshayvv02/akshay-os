@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akshay OS</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Akshay OS</p>
+        <h1>Home edge node</h1>
+        <p class="subtitle">Local dashboard connected to the backend health API.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="label">API status</p>
+            <h2 id="statusText">Checking...</h2>
+          </div>
+          <span id="statusDot" class="dot pending"></span>
+        </div>
+
+        <pre id="healthOutput">{}</pre>
+
+        <button id="refreshButton" type="button">Refresh</button>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
